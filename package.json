@@ -4,7 +4,7 @@
   "description": "Selenium WebDriver Properties Documentation Website",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NEXT_SKIP_SWC_BINARY_DOWNLOAD=1 next build",
     "start": "next start",
     "lint": "next lint"
   },
