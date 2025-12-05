@@ -22,7 +22,7 @@ export const DocSection: React.FC<DocSectionProps> = ({ item, isActive }) => {
       {/* Syntax */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded mb-6">
         <h3 className="text-sm font-semibold text-blue-900 dark:text-blue-200 mb-2">Syntax</h3>
-        <CodeBlock code={item.syntax} language={item.language || 'java'} />
+        <CodeBlock code={item.syntax} language="java" />
       </div>
 
       {/* Examples */}

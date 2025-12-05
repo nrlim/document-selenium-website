@@ -5,7 +5,6 @@ import { Sidebar } from '@/components/Sidebar';
 import { Navigation } from '@/components/Navigation';
 import { DocSection } from '@/components/DocSection';
 import { documentation } from '@/data/documentation';
-import { ChevronDown } from 'lucide-react';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState(documentation[0].id);
@@ -58,7 +57,7 @@ export default function Home() {
           {searchQuery && filteredItems.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-4">
-                No results found for "{searchQuery}"
+                No results found for &quot;{searchQuery}&quot;
               </p>
               <button
                 onClick={() => setSearchQuery('')}

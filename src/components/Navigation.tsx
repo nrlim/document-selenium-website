@@ -1,13 +1,11 @@
 import React from 'react';
-import { Search, Menu, X } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 interface NavigationProps {
   onSearch?: (query: string) => void;
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ onSearch }) => {
-  const [searchOpen, setSearchOpen] = React.useState(false);
-
   return (
     <nav className="sticky top-0 z-20 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-full px-4 sm:px-6 lg:px-8 py-4">

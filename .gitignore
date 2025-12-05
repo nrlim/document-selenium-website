@@ -38,3 +38,4 @@ Thumbs.db
 
 # IDE specific files
 .env.*.local
+.vercel
