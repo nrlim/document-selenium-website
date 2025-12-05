@@ -5,6 +5,11 @@
   "framework": "nextjs",
   "env": {},
   "regions": ["iad1"],
+  "build": {
+    "env": {
+      "NEXT_SKIP_SWC_BINARY_DOWNLOAD": "1"
+    }
+  },
   "git": {
     "deploymentEnabled": {
       "main": true
